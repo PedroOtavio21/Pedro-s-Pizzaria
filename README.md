@@ -55,9 +55,10 @@ Portfólio: Seu Portfólio
 ## To-Do
 - [x]. Criar readme para se organizar no planejamento do projeto
 - [x]. Criar estrutura de documento html
-- []. Finalizar estrutura de documento html em "cardápio"
-- []. Adicionar estrutura de projeto para melhor visualização de pastas
-- []. Adicionar imagens ao diretório do projeto (Principais e IA)
-- []. Estilizar o site tomando como base o princípio de "mobile first"
-- []. Finalizar a estilização, com responsividade completa
+- [x]. Finalizar estrutura de documento html em "cardápio"
+- [x]. Adicionar estrutura de projeto para melhor visualização de pastas
+- []. Adicionar imagens ao diretório do projeto (Principais ☑️ e IA)
+- [x]. Estilizar o site tomando como base o princípio de "mobile first"
+- [x]. Finalizar a estilização, com responsividade completa
+- []. Verificar responsividade para tamanho de conteúdo dos itens
 - []. Adicionar links que direcionam às redes sociais
