@@ -1,0 +1,234 @@
+/* Padronização de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Variáveis */
+:root {
+    --color-dark: #232323;
+    --color-gary: #eaeaea;
+    --color-white: #ffffff;
+    --color-primary: #ffa403;
+
+    --padding-sm: 1rem;
+    --padding-md: 1.5rem;
+    --padding-lg: 2rem;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: var(--color-gary);
+}
+
+.header {
+    background-color: var(--color-dark);
+    padding: var(--padding-md);
+}
+
+.list-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.list-menu a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.hero-section {
+    background: 
+    linear-gradient(to bottom, rgba(0,0,0,0), rgba(0, 0, 0, 0.2)),
+    url(../images/pexels-narda-yescas-1566837.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    color: var(--color-white);
+    font-weight: 500;
+    margin-bottom: var(--padding-md);
+}
+
+.hero-section p {
+    color: var(--color-white);
+    margin-bottom: var(--padding-sm);
+}
+
+.btn {
+    background-color: var(--color-primary);
+    border-radius: .75rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    color: var(--color-dark);
+    font-size: 1.175rem;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.menu-section {
+    padding: var(--padding-md);
+}
+
+.menu-section h2 {
+    font-size: var(--padding-lg);
+    text-align: center;
+    margin-bottom: var(--padding-md);
+}
+
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--padding-md);
+}
+
+.menu-item {
+    background-color: var(--color-white);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: .75rem;
+    margin-bottom: var(--padding-md);
+    text-align: center;
+    height: auto;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: .75rem;
+    border-top-left-radius: .75rem;
+}
+
+.menu-item h3 {
+    font-size: var(--padding-sm);
+    padding-top: .75rem;
+}
+
+.menu-item p {
+    padding: .75rem;
+}
+
+.about-section {
+    background: 
+    linear-gradient(to bottom, rgba(0,0,0,0), rgba(0, 0, 0, 0.8)),
+    url(../images/pexels-eneida-nieves-905847.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--color-white);
+    padding: var(--padding-md);
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: var(--padding-lg);
+    margin-bottom: var(--padding-md);
+}
+
+.about-section p{
+    margin-bottom: var(--padding-sm);
+}
+
+.contact-section {
+    padding: var(--padding-md);
+}
+
+.contact-section h2 {
+    font-size: var(--padding-lg);
+    text-align: center;
+    margin-bottom: var(--padding-sm);
+}
+
+.contact-section p {
+    margin-bottom: var(--padding-sm);
+}
+
+.contact-section .btn {
+    display: block;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-md);
+    margin-bottom: var(--padding-sm);
+}
+
+address a {
+    color: var(--color-primary);
+}
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+    padding: var(--padding-lg);
+    text-align: center;
+}
+
+@media screen and (min-width: 425px) {
+    .list-menu {
+        flex-direction: row;
+        justify-content: center;
+        gap: var(--padding-md);
+    }
+
+    .list-menu a:hover{
+        color: var(--color-primary);
+    }
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .menu-section,
+    .about-section,
+    .contact-section {
+        padding: 3rem 6rem;
+    }
+
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .menu-section h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-section > p {
+        text-align: center;
+        margin-bottom: var(--padding-lg);
+    }
+
+    address {
+        flex-direction: row;
+        text-align: left;
+        gap: var(--padding-lg);
+    }
+
+    .menu-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
